@@ -24,10 +24,12 @@ describe("MoodSelector", () => {
     fireEvent.click(moodButtons[4]);
     fireEvent.click(moodButtons[6]);
     fireEvent.click(moodButtons[8]);
-    const clickedButtonIndexes = [4, 6, 8];
+    fireEvent.click(moodButtons[9]);
+    fireEvent.click(moodButtons[1]);
+    const firstThreeChoices = [4, 6, 8];
     const errors = [];
     for (let i = 0; i < moodButtons.length; i++) {
-      if (clickedButtonIndexes.includes(i)) {
+      if (firstThreeChoices.includes(i)) {
         if (moodButtons[i].dataset.selected === "true") {
           // Clicked button is selected: success
           continue;
