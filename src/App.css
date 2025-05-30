@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.mood-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mood-selector button {
+  background-color: #323232;
+}
+
+.mood-selector button.selected {
+  background-color: #676767;
+}
